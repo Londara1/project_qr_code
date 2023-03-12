@@ -7,20 +7,30 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
         <style>
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
             body {
                 background-color: #D5E1EF;
+                display: flex;
+                height: 100vh;
+                width: 100vw;
             }
 
             div {
+                display: flex;
+                flex-direction: column;
                 width: 320px;
                 background-color: #FFFFFF;
                 border-radius: 20px;
-                overflow: hidden;
                 padding: 16px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%);
+                margin: auto;
+                justify-content: center;
+                align-items: center;
 
             }
 
@@ -31,12 +41,14 @@
 
             h1 {
                 color: #1F314F;
+                width: 288px;
                 text-align: center;
                 line-height: 28px;
                 font-size: 22px;
                 font-weight: 700;
                 font-style: normal;
                 font-family: 'Outfit';
+                margin-top: 24px;
 
             }
 
@@ -49,6 +61,10 @@
                 text-align: center;
                 letter-spacing: 0.1875px;
                 color: #7D889E;
+                width: 256px;
+                height: 57px;
+                margin-top: 16px;
+                margin-bottom: 24px;
             }
         </style>
     </head>
